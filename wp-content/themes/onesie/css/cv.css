@@ -1,0 +1,142 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: local("Helvetica Neue"),
+       local("HelveticaNeue");
+}
+
+#myModal .set > * {
+font-family: HelveticaNeue, Helvetica, Arial !important;
+}
+
+#myModal a {
+color: #4286f4
+}
+
+#myModal a:visited {
+color: #999999
+}
+
+#myModal h1, h2, h3, h4 {
+margin: 0 0 15px 0;
+padding: 0;
+}
+#myModal h1 {
+font-size: 300%;
+}
+#myModal h2 {
+font-size: 210%;
+}
+#myModal h3 {
+font-size: 130%;
+}
+
+#myModal p {
+margin: 0 0 10px 0;
+}
+
+#myModal ul {
+margin: 0;
+padding: 0 0 0 10px;
+list-style-type: square;
+}
+
+/* ________________________________________________________ */
+
+.clear {
+clear: both;
+}
+
+#modalMain {
+background: #fff;
+width: 900px;
+padding: 35px;
+margin: 0 auto 15px auto;
+overflow: hidden;
+
+box-shadow: 0 0 6px #ccc;
+}
+
+#title {
+line-height: 42px;
+border-bottom: 3px solid #000;
+padding-bottom: 30px;
+margin: 0px 0 30px 0;
+font-weight: bold;
+}
+
+p label {
+font-weight: bold;
+
+font-size: 110%;
+margin-right: 10px;
+}
+p label span.colon {
+display: inline;
+}
+
+
+#modalMain .section {
+margin-bottom: 30px;
+}
+
+#modalMain .item {
+margin: 0 0 20px 0;
+}
+
+/*  _____________________________ */
+
+#modalMain .basic-info .address {
+width: 40%;
+float: left;
+}
+#modalMain .basic-info .r {
+float: right;
+width: 50%;
+text-align: right;
+}
+#modalMain .basic-info label {
+font-weight: bold;
+}
+#modalMain .basic-info label, .basic-info span  {
+display: inline !important;
+}
+#modalMain .basic-info p {
+margin: 0;
+}
+
+#modalMain .section .title {
+background: #000;
+float: left;
+text-transform: uppercase;
+font-size: 105%;
+font-weight: bold;
+color: #fff;
+padding: 4px 6px;
+width: 16%;
+margin-right: 30px;
+}
+#modalMain .section .set {
+float: left;
+width: 78%;
+}
+#modalMain .section .set h3 {
+margin: 0;
+}
+#modalMain .section span {
+display: block;
+}
+#modalMain .section h3 span.l, #modalMain .section span.r {
+width: 49%;
+float: left;
+}
+#modalMain .section span.r {
+float: right;
+text-align: right;
+}
+#modalMain .section-education .school,
+#modalMain .section-work .job_title {
+font-size: 100%;
+display: block;
+margin: 5px 0 5px 0;
+}
+

@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Onesie\n"
+"POT-Creation-Date: 2014-02-05 11:44-0500\n"
+"PO-Revision-Date: 2014-02-05 11:44-0500\n"
+"Last-Translator: Thad Allender <support@graphpaperpress.com>\n"
+"Language-Team: Thad Allender <support@graphpaperpress.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:27
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: index.php:53
+msgid "Learn More"
+msgstr ""
+
+#: index.php:62 index.php:81 theme-options.php:39 theme-options.php:43
+msgid "Portfolio"
+msgstr ""
+
+#: index.php:63 index.php:112 theme-options.php:140
+msgid "About"
+msgstr ""
+
+#: index.php:64 index.php:124 theme-options.php:152
+msgid "Contact"
+msgstr ""
+
+#: index.php:142
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: index.php:144
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: index.php:145
+msgid "Back to top"
+msgstr ""
+
+#: theme-options.php:11 theme-options.php:15
+msgid "General"
+msgstr ""
+
+#: theme-options.php:25 theme-options.php:29
+msgid "Colors"
+msgstr ""
+
+#: theme-options.php:58
+msgid "Logo"
+msgstr ""
+
+#: theme-options.php:59
+msgid "Use a transparent png or jpg image"
+msgstr ""
+
+#: theme-options.php:69
+msgid "Favicon"
+msgstr ""
+
+#: theme-options.php:70
+msgid "Use a transparent png or ico image"
+msgstr ""
+
+#: theme-options.php:80
+msgid "Headline Font"
+msgstr ""
+
+#: theme-options.php:81 theme-options.php:93
+msgid "<a href=\""
+msgstr ""
+
+#: theme-options.php:92
+msgid "Body Font"
+msgstr ""
+
+#: theme-options.php:104
+msgid "Message"
+msgstr ""
+
+#: theme-options.php:105
+msgid "Add a welcome message below your site title."
+msgstr ""
+
+#: theme-options.php:116
+msgid "Button Link"
+msgstr ""
+
+#: theme-options.php:117
+msgid "The url where your button links to."
+msgstr ""
+
+#: theme-options.php:128
+msgid "Button Text"
+msgstr ""
+
+#: theme-options.php:129
+msgid "The text appearing on your button."
+msgstr ""
+
+#: theme-options.php:141
+msgid "Add some information about yourself."
+msgstr ""
+
+#: theme-options.php:153
+msgid "Your contact information"
+msgstr ""
+
+#: theme-options.php:164
+msgid "Color"
+msgstr ""
+
+#: theme-options.php:165
+msgid "Select a color palette"
+msgstr ""
+
+#: theme-options.php:174
+msgid "Light"
+msgstr ""
+
+#: theme-options.php:178
+msgid "Dark"
+msgstr ""
+
+#: theme-options.php:185
+msgid "Custom CSS"
+msgstr ""
+
+#: theme-options.php:186
+msgid "Add some custom CSS to your theme."
+msgstr ""
+
+#: theme-options.php:197
+msgid "Portfolio Images"
+msgstr ""
+
+#: theme-options.php:198
+msgid "Select or create a gallery of images to use in the homepage portfolio."
+msgstr ""
+
+#: inc/extras.php:47
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: options/options.php:128 options/options.php:131
+#: options/library/theme-customizer.php:49
+msgid "Theme Options"
+msgstr ""
+
+#: options/options.php:166
+msgid " settings updated successfully."
+msgstr ""
+
+#: options/options.php:177
+msgid "Save Settings"
+msgstr ""
+
+#: options/options.php:178
+msgid "Reset Defaults"
+msgstr ""
+
+#: options/options.php:366 options/options.php:386 options/options.php:405
+msgid ""
+"This option has no valid options. Please create valid options as an array "
+"inside the GPP Framework."
+msgstr ""
+
+#: options/options.php:488
+msgid "Upload or Select Image"
+msgstr ""
+
+#: options/options.php:489 options/options.php:584
+msgid "Remove"
+msgstr ""
+
+#: options/options.php:583
+msgid "Upload or Select Images"
+msgstr ""
+
+#: options/options.php:674
+msgid "Version: "
+msgstr ""
+
+#: options/options.php:675
+msgid "Support"
+msgstr ""
+
+#: options/options.php:676
+msgid "Theme Instructions"
+msgstr ""
+
+#: options/options.php:676
+msgid "Instructions"
+msgstr ""
+
+#: options/options.php:688
+msgid "URL"
+msgstr ""
+
+#: options/library/helpers.php:15
+msgid "-- Choose One --"
+msgstr ""
