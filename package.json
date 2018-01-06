@@ -1,7 +1,7 @@
 {
-  "name": "Jalpc",
-  "version": "1.1.1",
-  "description": "npm config file for Jalpc",
+  "name": "pyarmak-website",
+  "version": "1.0.0",
+  "description": "npm config file for Pavel Yarmak's personal website",
   "main": "",
   "scripts": {
     "build": "node build/build.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jarrekk/Jalpc.git"
+    "url": "git+https://github.com/pyarmak/pyarmak.github.io.git"
   },
-  "author": "Kun Jia",
-  "license": "MIT",
+  "author": "Pavel Yarmak",
+  "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/jarrekk/Jalpc/issues"
+    "url": "https://github.com/pyarmak/pyarmak.github.io/issues"
   },
-  "homepage": "https://github.com/jarrekk/Jalpc#readme",
+  "homepage": "http://pavel.yarmak.me/",
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.6",
