@@ -13,7 +13,7 @@ layout: default
                         {% endfor %}
                     </div>
                     <div class="text-center article-title">
-                    <span class="text-muted"><i class="fa fa-clock-o"></i> {{ page.date | date: "%-d %b %Y" }}</span>
+                    <span class="text-muted"><i class="far fa-clock"></i> {{ page.date | date: "%-d %b %Y" }}</span>
                         <h1>
                             {{ page.title }}
                         </h1>
@@ -31,7 +31,7 @@ layout: default
                             <div class="small text-right">
                                 <div>
                                 {% if site.disqus %}
-                                <i class="fa fa-comments-o"> </i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
+                                <i class="far fa-comments"> </i> <span class="disqus-comment-count" data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
                                 {% endif %}
                                 </div>
                             </div>

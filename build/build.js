@@ -14,11 +14,6 @@ nowDateStr = nowDate.toISOString().slice(0, 10).replace(/-/g, "");
 rm('-rf', 'static/assets/*.min.js');
 rm('-rf', 'static/assets/*.min.css');
 
-cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.eot', 'static/assets/');
-cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.svg', 'static/assets/');
-cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.ttf', 'static/assets/');
-cp('-f', 'node_modules/font-mfizz/dist/font-mfizz.woff', 'static/assets/');
-
 // change link/src files to new file path
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/index_head.html');
 sed('-i', /(.*)[0-9]{8}(.*)/, '$1' + nowDateStr + '$2', '_includes/head.html');
@@ -57,12 +52,6 @@ function compresscss(pagename, filename, filelist) {
                 transform: function(propertyName, propertyValue) {
                     if (propertyName == 'src' && propertyValue.indexOf('node_modules/bootstrap/dist/') > -1) {
                         return propertyValue.replace('node_modules/bootstrap/dist/', '');
-                    }
-                    if (propertyName == 'src' && propertyValue.indexOf('node_modules/components-font-awesome/') > -1) {
-                        return propertyValue.replace('node_modules/components-font-awesome/', '');
-                    }
-                    if (propertyName == 'src' && propertyValue.indexOf('node_modules/font-mfizz/dist/') > -1) {
-                        return propertyValue.replace('node_modules/font-mfizz/dist/', '');
                     }
                     if (propertyName == 'background' && propertyValue.indexOf('static/img/') > -1) {
                         return propertyValue.replace('static/', '');
