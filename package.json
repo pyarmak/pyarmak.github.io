@@ -5,7 +5,8 @@
   "main": "",
   "scripts": {
     "build": "node build/build.js",
-    "dev": "node build/dev-server.js"
+    "dev": "node build/dev-server.js",
+    "watch": "jekyll server --watch --incremental"
   },
   "repository": {
     "type": "git",

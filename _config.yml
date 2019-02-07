@@ -15,7 +15,7 @@ author:
   avatar: /static/assets/img/landing/avatar.jpg
   github_username: pyarmak
   linkedin_id: pyarmak
-  facebook_username: pyarmak
+#  facebook_username: pyarmak
   twitter_username: Pavel_Yarmak
   email: pavel@yarmak.me
   cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
@@ -26,7 +26,7 @@ author:
   skill_icon2:
     - name: fas fa-heartbeat
     - name: fas fa-code
-  desc: A rather (a)typical second-year medical student at the University of Manitoba's Max Rady College of Medicine with a passion for technology.
+  desc: A rather (a)typical third-year medical student at the University of Manitoba's Max Rady College of Medicine with a passion for technology.
 
 # comment
 #disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
