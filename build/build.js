@@ -4,7 +4,7 @@ var fs = require('fs');
 require('shelljs/global');
 require('colors');
 
-var fileConf = require('./files.conf.js')
+var fileConf = require('./files.conf.js');
 var CSSJSfiles = fileConf.CSSJSfiles;
 
 nowDate = new Date();

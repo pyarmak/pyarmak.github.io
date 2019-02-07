@@ -5,8 +5,7 @@
   "main": "",
   "scripts": {
     "build": "node build/build.js",
-    "dev": "node build/dev-server.js",
-    "watch": "jekyll server --watch --incremental"
+    "watch": "start node build/watch.js && start jekyll server --watch --incremental"
   },
   "repository": {
     "type": "git",
@@ -34,6 +33,7 @@
     "wowjs": "^1.1.2"
   },
   "devDependencies": {
+    "chokidar": "^2.1.0",
     "clean-css": "^4.0.6",
     "shelljs": "^0.7.6",
     "uglify-js": "^2.7.5"
