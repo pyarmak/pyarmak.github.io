@@ -1,1 +1,15 @@
+<script src="/static/js/pdfobject.min.js"></script>
+<script type="text/javascript">
+    var options = {
+        pdfOpenParams: {
+            navpanes: 0,
+            toolbar: 0,
+            statusbar: 0,
+            pagemode: "thumbs",
+            view: "FitH"
+        }
+    };
+
+    var myPDF = PDFObject.embed("/static/assets/cv.pdf", "#cvpdf", options);
+</script>
 {% include analytics.html %}

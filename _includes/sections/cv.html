@@ -1,0 +1,61 @@
+<div class="container" id="i18_cv">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line" style="margin-top: 30px;"></div>
+            <h1><span data-i18n="cv.cv">Curriculum Vitae</span></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg wow zoomIn">
+            <p>Please use the buttons below in order to access my Curriculum Vitae.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-3 text-center">
+            <div class="col-md-3">
+                <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#CVModal">
+                    View
+                </button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="printJS('/static/assets/cv.pdf')">
+                    Print
+                </button>
+            </div>
+            <div class="col-md-3">
+                    <a href="/static/assets/cv.pdf" class="btn btn-success btn-lg btn-block" download="pavel-yarmak-cv.pdf" role="button">
+                        Download
+                    </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg wow zoomIn">
+            <!-- <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#CVModal">
+                View
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="printJS('/static/assets/cv.pdf')">
+                Print
+            </button>
+            <button type="button" class="btn btn-success btn-lg btn-block">
+                <a href="/static/assets/cv.pdf" download="pavel-yarmak-cv.pdf">Download</a>
+            </button> -->
+
+            <div id="CVModal" class="modal bs-example-modal-lg" id="CVModal" tabindex="-1" role="dialog"
+                aria-labelledby="CVModalLabel" aria-hidden="true">
+                <div class="modal-dialog" style="width: 75%; height: 90%;">
+                    <div class="modal-content" style="height: 100%;">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="CVModalLabel">Pavel Yarmak · Curriculum Vitae</h4>
+                        </div>
+                        <div class="modal-body" style="height: 93%">
+                            <div id="cvpdf"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

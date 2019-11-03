@@ -9,7 +9,8 @@
     "projects": "Projects",
     "career": "Career",
     "blog": "Blog",
-    "link": "Link"
+    "link": "Link",
+    "cv": "CV"
   },
   "about_me":{
     "about_me": "About Me",
@@ -49,6 +50,11 @@
   "link":{
     "link": "Link",
     "view": "views"
+  },
+  "cv":{
+    "cv": "Curriculum Vitae"
+  },
+  "contact":{
+    "contact": "Contact Me"
   }
-
 }

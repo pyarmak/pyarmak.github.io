@@ -18,7 +18,7 @@ author:
 #  facebook_username: pyarmak
   twitter_username: Pavel_Yarmak
   email: pavel@yarmak.me
-  cv: http://cv.jarrekk.com  # An online CV can be printed as PDF, leave blank if you don't have now
+  cv: /static/assets/cv.pdf
   # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
   skill_icon1:
     - name: fas fa-terminal
@@ -26,7 +26,7 @@ author:
   skill_icon2:
     - name: fas fa-heartbeat
     - name: fas fa-code
-  desc: A rather (a)typical third-year medical student at the University of Manitoba's Max Rady College of Medicine with a passion for technology.
+  desc: Final-year medical student at the University of Manitoba's Max Rady College of Medicine with a passion for technology.
 
 # comment
 #disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
@@ -49,8 +49,8 @@ gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your 
 donation: off  # type 'on'/'off' to choice display donation button at post page or not
 
 ## carousels
-index_carousel: on  # index page carousel switch
-blog_carousel: on  # blog page carousel switch
+index_carousel: off  # index page carousel switch
+blog_carousel: off  # blog page carousel switch
 
 # scss
 sass:

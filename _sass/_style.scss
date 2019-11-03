@@ -69,7 +69,7 @@ h3, h4, h5 {
 }
 
 .navbar-default {
-  background-color: transparent;
+  background-color: #676a6c;
 }
 
 .nav > li > a i {
@@ -2403,7 +2403,7 @@ body {
       border-color: #fff;
       padding: 15px 0;
     }
-    background-color: transparent;
+    background-color: #676a6c;
     border-color: transparent;
     transition: all .3s ease-in-out 0s;
     .nav li a {
@@ -2415,20 +2415,20 @@ body {
       font-size: 14px;
     }
   }
-  .navbar-nav > li > a {
-    padding-top: 25px;
-    border-top: 6px solid transparent;
-  }
+  // .navbar-nav > li > a {
+  //   padding-top: 25px;
+  //   border-top: 6px solid transparent;
+  // }
   .navbar-default {
     .navbar-nav > {
       .active > a {
         background: 0 0;
         color: #fff;
-        border-top: 6px solid #3385FF;
+        // border-top: 6px solid #3385FF;
         &:hover {
           background: 0 0;
           color: #fff;
-          border-top: 6px solid #3385FF;
+          // border-top: 6px solid #3385FF;
         }
       }
       li > a {
@@ -2480,7 +2480,7 @@ body {
       background: inherit;
     }
     > a {
-      padding: 25px 10px 15px;
+      padding: 20px 10px 15px;
     }
   }
   .navbar-scroll .navbar-nav > li > a {
@@ -2643,7 +2643,7 @@ body {
     height: 88px;
     width: 88px;
   }
-  .btn-primary {
+  .btn-success, .btn-primary, .btn-info, .btn-secondary {
     font-weight: 600;
     font-size: 14px;
   }
@@ -2679,6 +2679,9 @@ body {
   }
   .btn-info.btn-outline:hover, .btn-primary.btn-outline:hover, .btn-success.btn-outline:hover, .btn-warning.btn-outline:hover {
     color: #fff;
+  }
+  .btn-success, .btn-info, .btn-secondary {
+    padding: 10px 20px;
   }
   .btn-primary {
     background-color: #3385FF;
