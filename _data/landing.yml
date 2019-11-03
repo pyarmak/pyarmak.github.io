@@ -45,6 +45,6 @@
 
 - id: contact
   i18n: nav.contact
-  name: Contact Me
+  name: Contact
   tpl: contact.html
   css: 
