@@ -20,7 +20,7 @@
         <!-- avatar -->
         <div class="col-xs-4">
             <div class="team-member wow zoomIn">
-                <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="Pavel Yarmak">
                 <h4><span class="navy">{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
                 <ul class="list-inline social-icon">
                     {% if site.author.github_username %}
@@ -38,7 +38,7 @@
                     {% if site.author.email %}
                     <li><a href="mailto:{{ site.author.email }}"><i class="far fa-envelope"></i></a></li>
                     {% endif %}
-                    <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fas fa-rss"></i></a></li>
+                    <!-- <li><a href="{{ site.baseurl }}/feed.xml" target="blank"><i class="fas fa-rss"></i></a></li> -->
                     {% if site.author.cv %}
                     <li><a href="{{ site.author.cv }}" target="blank"><i class="far fa-file-pdf"></i></a></li>
                     {% endif %}
