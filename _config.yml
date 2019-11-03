@@ -4,7 +4,7 @@ description: Pavel Yarmak's personal website
 keywords: Pavel,Yarmak,medicine,technology,blog
 #baseurl:
 #url: https://pyarmak.github.io/
-url: http://127.0.0.1:4000
+url: https://pavel.yarmak.me
 img_path: /static/assets/img/blog
 
 # author -- index page "about me" section
