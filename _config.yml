@@ -14,7 +14,8 @@ author:
   last_name: Yarmak
   avatar: /static/assets/img/landing/avatar.jpg
   github_username: pyarmak
-  linkedin_id: pyarmak
+  # linkedin_id: pyarmak
+  researchgate_id: Pavel_Yarmak
 #  facebook_username: pyarmak
   # twitter_username: Pavel_Yarmak
   email: pavel@yarmak.me

@@ -13,7 +13,7 @@ module.exports = {
             'node_modules/wowjs/dist/wow.js',
             'static/js/scroll.js',
             'static/js/count.js',
-            'static/js/fontawesome-all.js'
+            'static/js/fa-all.min.js'
         ]
     }, {
         name: 'i18next page',
@@ -46,7 +46,7 @@ module.exports = {
             'node_modules/normalize.css/normalize.css',
             'node_modules/bootstrap/dist/css/bootstrap.css',
             'node_modules/animate.css/animate.css',
-            'static/css/fa-svg-with-js.css',
+            'static/css/svg-with-js.min.css',
             'node_modules/font-mfizz/dist/font-mfizz.css',
             'node_modules/gritter/jquery.gritter.css',
             'node_modules/pace-progress/themes/blue/pace-theme-flash.css'
