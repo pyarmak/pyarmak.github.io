@@ -1,0 +1,46 @@
+---
+import '../styles/global.css'
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro'
+import { siteName, toRoutePath, withBase } from '../utils/site'
+
+const { title, description } = Astro.props
+
+// const pageTitle = title ? `${title} | ${siteName}` : siteName
+const pageTitle = siteName
+const pageDescription =
+  description ??
+  `${siteName} is a comprehensive ophthalmologist practicing in Winnipeg, Manitoba.`
+const currentPath = toRoutePath(Astro.url.pathname)
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="theme-color" content="#15324a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={Astro.url.href} />
+    <link rel="icon" href={withBase('/favicon.svg')} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="site-root">
+      <Header currentPath={currentPath} />
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>

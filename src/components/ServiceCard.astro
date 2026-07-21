@@ -1,0 +1,21 @@
+---
+const { title, excerpt, eyebrow = 'Featured Service' } = Astro.props
+---
+<article class="service-card">
+  <div class="service-card-inner">
+    <div class="service-icon" aria-hidden="true">
+      <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="52" height="52" rx="18" fill="#E5F2F2" />
+        <path
+          d="M12 26C15.2448 20.9111 20.2728 18 26 18C31.7272 18 36.7552 20.9111 40 26C36.7552 31.0889 31.7272 34 26 34C20.2728 34 15.2448 31.0889 12 26Z"
+          stroke="#16324B"
+          stroke-width="2"
+        />
+        <circle cx="26" cy="26" r="4.5" fill="#2C8C95" />
+      </svg>
+    </div>
+    <p class="service-eyebrow">{eyebrow}</p>
+    <h3>{title}</h3>
+    <p>{excerpt}</p>
+  </div>
+</article>

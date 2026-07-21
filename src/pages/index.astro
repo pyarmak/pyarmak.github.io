@@ -1,0 +1,297 @@
+---
+import { Leaflet, CreateLeafletIcon } from "astro-leaflet";
+import type {AstroLeafletOptionsType, AstroLeafletMarkerType}  from 'astro-leaflet';
+
+import CTA from '../components/CTA.astro'
+import Hero from '../components/Hero.astro'
+import SectionHeader from '../components/SectionHeader.astro'
+import ServiceCard from '../components/ServiceCard.astro'
+import MainLayout from '../layouts/MainLayout.astro'
+import { siteName, withBase } from '../utils/site'
+
+const pageTitle = 'Home'
+const pageDescription =
+  `${siteName} is a comprehensive ophthalmologist practicing in Winnipeg, Manitoba.`
+
+const officeLocation = {
+  lat: 49.88918208690255,
+  lng: -97.14790991648051,
+}
+const markers: AstroLeafletMarkerType[] = []
+markers.push({
+  latlng: [officeLocation.lat, officeLocation.lng],
+  options: {
+    title: 'Office Location',
+  }
+})
+
+const options: AstroLeafletOptionsType = {
+	tileByName: 'Google&type=street',
+	// tileLayer: 'https://{s}.google.com/vt/lyrs=s,h&hl=en&x={x}&y={y}&z={z}',
+	// tileLayerOptions: {
+	// 	subdomains: [ 'mt0', 'mt1', 'mt2', 'mt3' ],
+	// 	attribution: 'Map data &copy; Google',
+	// },
+	markers: markers,
+  center: [officeLocation.lat, officeLocation.lng],
+  zoom: 16,
+}
+
+const heroHighlights = [
+  'Comprehensive ophthalmology',
+  'Cataract surgery',
+  'Patient-first communication',
+]
+
+const heroMediaDetails = [
+  {
+    label: 'Placeholder one',
+    title: 'Reception or clinic interior imagery',
+  },
+  {
+    label: 'Placeholder two',
+    title: 'Diagnostic suite or exam-lane photography',
+  },
+  {
+    label: 'Placeholder three',
+    title: 'Provider portrait or team photography',
+  },
+]
+
+const featuredServices = [
+  {
+    eyebrow: 'Routine Eye Care',
+    title: 'Comprehensive Eye Exams',
+    excerpt:
+      'Comprehensive evaluations for routine care, vision changes, and long-term ocular health planning in a calm clinical setting.',
+  },
+  {
+    eyebrow: 'Surgical Consultation',
+    title: 'Cataract Evaluations',
+    excerpt:
+      'Clear, supportive conversations for patients noticing cataract symptoms and considering whether a consultation is appropriate.',
+  },
+  {
+    eyebrow: 'Ongoing Management',
+    title: 'Glaucoma Care',
+    excerpt:
+      'Thoughtful monitoring and care planning designed to support consistency, education, and informed decision-making over time.',
+  },
+  {
+    eyebrow: 'Retinal Health',
+    title: 'Diabetic Eye Care',
+    excerpt:
+      'Focused retinal assessment and follow-up for patients managing diabetes and protecting long-term vision health.',
+  },
+]
+
+const valuePoints = [
+  {
+    title: 'Compassionate care',
+    copy:
+      'Each visit is framed around calm communication, respectful listening, and an experience that feels attentive from arrival onward.',
+  },
+  {
+    title: 'Modern diagnostics',
+    copy:
+      'Clinical planning is supported by contemporary ophthalmic technology and a thoughtful, measured approach to evaluation.',
+  },
+  {
+    title: 'Personalized treatment',
+    copy:
+      'Recommendations can be tailored to a patient’s symptoms, medical history, visual priorities, and comfort with next steps.',
+  },
+  {
+    title: 'Patient-focused support',
+    copy:
+      'From scheduling to visit preparation, communication is organized to feel clear, manageable, and reassuring.',
+  },
+]
+
+const providerFocusAreas = [
+  'Placeholder specialty focus',
+  'Placeholder clinical interests',
+  'Placeholder care philosophy',
+]
+
+const patientInformationItems = [
+  'Placeholder new-patient forms and intake packets',
+  'Insurance participation and referral guidance pending confirmation',
+  'Visit preparation details for arrival time, medications, and eyewear',
+]
+---
+
+<MainLayout title={pageTitle} description={pageDescription}>
+  <Hero
+    eyebrow="Dr. Pavel Yarmak, MD, FRCSC"
+    title="Focused on clear vision, thoughtful care, and confidence at every visit."
+    ctaText="Request Appointment"
+    ctaHref={withBase('/contact')}
+    secondaryCtaText="View Services"
+    secondaryCtaHref={withBase('/services')}
+    highlights={[]}
+    mediaDetails={[]}
+  />
+
+  <!-- <section class="section-shell section-shell--lined">
+    <div class="container section-grid section-grid--about">
+      <SectionHeader
+        eyebrow="About the Practice"
+        title="Care that feels attentive from the first visit forward."
+        subtitle="The practice introduction is designed to communicate calm professionalism, clinical precision, and a clear focus on patient experience."
+      />
+      <div class="info-panel">
+        <p>
+          Medical Center Eye Institute is positioned as a refined ophthalmology practice where patients can expect thoughtful
+          communication, careful evaluation, and a welcoming environment that supports confidence in their care.
+        </p>
+        <p class="muted">
+          This preview keeps the language realistic and demo-ready while reserving provider biographies, photography, and final
+          office details for client-approved content.
+        </p>
+        <a class="btn secondary" href={withBase('/about')}>Learn About the Practice</a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="section-shell section-shell--tinted" aria-labelledby="featured-services-heading">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Featured Services"
+        headingId="featured-services-heading"
+        title="Featured services"
+        subtitle="Core ophthalmology offerings are introduced with concise, polished descriptions suitable for a premium client demo."
+      />
+      <div class="services-grid">
+        {featuredServices.map((service) => (
+          <ServiceCard title={service.title} excerpt={service.excerpt} eyebrow={service.eyebrow} />
+        ))}
+      </div>
+      <div class="section-actions">
+        <a class="btn secondary" href={withBase('/services')}>View All Services</a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="section-shell" aria-labelledby="why-choose-us-heading">
+    <div class="container">
+      <SectionHeader
+        eyebrow="Why Choose Us"
+        headingId="why-choose-us-heading"
+        title="Why patients choose us"
+        subtitle="A strong ophthalmology website should balance clinical credibility with warmth, clarity, and support."
+      />
+      <div class="value-grid">
+        {valuePoints.map((item) => (
+          <article class="value-card">
+            <h3>{item.title}</h3>
+            <p>{item.copy}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="section-shell section-shell--soft">
+    <div class="container">
+      <article class="provider-card">
+        <div class="provider-card__media" aria-hidden="true">
+          <div class="provider-silhouette">
+            <div class="provider-silhouette__avatar"></div>
+            <div class="provider-silhouette__body"></div>
+          </div>
+          <div class="provider-photo-chip">Provider photo placeholder</div>
+        </div>
+        <div class="provider-card__copy">
+          <SectionHeader
+            eyebrow="Provider Highlight"
+            title="Placeholder Provider Name"
+            subtitle="Placeholder biography, credentials, and profile details pending client confirmation."
+          />
+          <p>
+            Use this section to introduce the lead physician or provider team with a concise overview of clinical philosophy,
+            patient communication style, and the type of care experience the practice wants to convey.
+          </p>
+          <p class="muted">
+            Credentials placeholder: add verified education, board certification, fellowship training, affiliations, and approved
+            distinctions only after final review.
+          </p>
+          <div class="provider-tags" aria-label="Placeholder provider focus areas">
+            {providerFocusAreas.map((item) => (
+              <span>{item}</span>
+            ))}
+          </div>
+          <a class="btn secondary" href={withBase('/about')}>Visit the About Page</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-shell">
+    <div class="container preview-grid">
+      <article class="content-card">
+        <SectionHeader
+          eyebrow="Patient Information"
+          title="Set expectations before the visit."
+          subtitle="The patient information preview gives visitors a clear sense of what they can prepare in advance."
+        />
+        <p>
+          This section can help patients feel prepared with simple, friendly guidance around forms, insurance, and visit-day
+          expectations without overwhelming them.
+        </p>
+        <ul class="info-list">
+          {patientInformationItems.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+        <a class="btn secondary" href={withBase('/patient-information')}>Go to Patient Information</a>
+      </article>
+
+      <article class="content-card">
+        <SectionHeader
+          eyebrow="Contact Preview"
+          title="Office details are ready for final confirmation."
+          subtitle="Contact information is intentionally shown as polished placeholder content until the client approves the final details."
+        />
+        <p>
+          The contact page can provide a calm, straightforward path for patients to call the office, locate the clinic, and review
+          office hours.
+        </p>
+        <dl class="contact-list">
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+10000000000">(000) 000-0000</a></dd>
+          </div>
+          <div>
+            <dt>Address</dt>
+            <dd>123 Medical Plaza, Suite 200, City, State ZIP</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Mon-Fri, 8:00 AM-5:00 PM; hours pending confirmation</dd>
+          </div>
+        </dl>
+        <p class="muted">All details above are placeholders for demo use only until final office information is provided.</p>
+        <a class="btn secondary" href={withBase('/contact')}>Open Contact Page</a>
+      </article>
+    </div>
+  </section> -->
+
+  <section class="section-shell section-shell--soft">
+    <div class="container">
+      <article class="content-card">
+          <p class="eyebrow">Office Location: 444 St Mary Ave #235, Winnipeg, MB</p>
+          <Leaflet options={options}/>
+      </article>
+    </div>
+  </section>
+
+  
+  <!-- <CTA
+    eyebrow="Request an Appointment"
+    title="Start with a calm, clear next step."
+    copy="This final call to action gives patients a reassuring invitation to request care while the full contact and scheduling workflow is finalized."
+    ctaText="Request Appointment"
+    ctaHref={withBase('/contact')}
+  /> -->
+</MainLayout>

@@ -1,0 +1,8 @@
+---
+const { title, subtitle, headingId, eyebrow } = Astro.props
+---
+<header class="section-header">
+  {eyebrow ? <p class="eyebrow">{eyebrow}</p> : null}
+  <h2 id={headingId}>{title}</h2>
+  {subtitle ? <p class="muted">{subtitle}</p> : null}
+</header>

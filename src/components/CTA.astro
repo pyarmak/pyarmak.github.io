@@ -1,0 +1,17 @@
+---
+const { eyebrow, title, copy, ctaText = 'Contact Us', ctaHref = '/contact' } = Astro.props
+---
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="cta-copy">
+        {eyebrow ? <p class="eyebrow">{eyebrow}</p> : null}
+        <h2>{title}</h2>
+        <p class="muted">{copy}</p>
+      </div>
+      <div class="cta-action">
+        <a class="btn primary large" href={ctaHref}>{ctaText}</a>
+      </div>
+    </div>
+  </div>
+</section>
